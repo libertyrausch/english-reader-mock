@@ -1,25 +1,6 @@
 import streamlit as st
 import random
-
-# Sample passages data (1 full English passage for now)
-passages_data = [
-    {
-        "title": "The Rise of Urban Gardening",
-        "level": "Intermediate High",
-        "text": [
-            "Urban gardening has gained significant popularity in recent years as people seek more sustainable and health-conscious lifestyles. In densely populated cities, where green spaces are often limited, individuals and communities are turning to creative solutions to grow their own food. Whether it's a rooftop garden, a balcony herb planter, or a shared community plot, urban gardening allows people to reconnect with nature and enjoy the fruits (and vegetables) of their labor.",
-            "One major benefit of urban gardening is the ability to produce fresh, organic food locally. This not only reduces the environmental impact associated with transporting produce over long distances but also provides access to healthier food options in areas that might otherwise lack them. In many urban neighborhoods, especially those labeled as food deserts, residents struggle to find affordable, nutritious food. Community gardens have become a way to address these issues, fostering food security and encouraging neighbors to collaborate.",
-            "Moreover, urban gardening promotes mental well-being. Studies have shown that spending time around plants and engaging in gardening activities can reduce stress and improve mood. For people living in concrete-heavy urban environments, even a small garden can offer a peaceful refuge from the hustle and bustle of city life. Gardening also fosters a sense of responsibility and accomplishment, especially when people watch their plants thrive under their care.",
-            "However, urban gardening also comes with challenges. Limited space can make it difficult to grow large quantities of food, and gardeners must be resourceful in using vertical space or container systems. Soil quality in cities may be poor or even contaminated, requiring raised beds and imported soil. Access to water, pests, and municipal regulations can also create obstacles.",
-            "Despite these challenges, the urban gardening movement continues to grow. Cities are beginning to recognize the benefits and are implementing policies that support gardening initiatives, such as allowing vacant lots to be converted into community gardens or offering tax incentives for green rooftops. Urban gardening reflects a growing awareness of sustainability and the desire for a closer connection to what we eat. As more people dig in and start growing, the concrete jungle might just become a little greener."
-        ],
-        "questions": [
-            {"type": "multiple_choice", "question": "What is one benefit of urban gardening mentioned in the text?", "options": ["It increases food transport", "It provides fresh, local food", "It eliminates the need for water"], "answer": "It provides fresh, local food"},
-            {"type": "true_false", "question": "Urban gardening is beneficial for mental health.", "answer": True},
-            {"type": "short_answer", "question": "Name one challenge urban gardeners face.", "answer": "Limited space"}
-        ]
-    }
-]
+from english_passages import passages_data
 
 st.set_page_config(page_title="English Reading Comprehension App")
 
